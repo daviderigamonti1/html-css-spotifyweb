@@ -66,6 +66,14 @@ hr {
     justify-content: center;
 }
 
+.justify-end {
+    justify-content: end;
+}
+
+.align-center {
+    align-items: center;
+}
+
 /*Class*/
 
 .wrapper {
@@ -146,6 +154,22 @@ div.box {
     display: inline-block;
 }
 
+#upgrade {
+    border: 1px solid var(--color-lightgrey);
+    color: white;
+    font-size: small;
+    text-align: center;
+    border-radius: 35px;
+    height: 35px;
+    line-height: 35px;
+    width: 190px;
+}
+
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
 /*Spacer*/
 
 .p-10 {
@@ -173,6 +197,10 @@ div.box {
 .small {
     font-size: small;
     color: var(--color-lightgrey);
+}
+
+.vertical-center {
+    vertical-align: center;
 }
 
 /*Page*/
