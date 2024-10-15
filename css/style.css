@@ -1,0 +1,120 @@
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+/*Generals*/
+
+:root {
+    --color-dark: #141922;
+    --color-darkgrey: #282828;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-lightgrey: #c1c1c1;
+    --color-highlight: #9ae22d;
+    --color-red: #ca1717;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    background-color: var(--color-dark);
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.img {
+    width: 230px;
+}
+.wrapper {
+    background-color: var(--color-dark);
+    height: 100vh;
+}
+
+/*Flex Utility*/
+
+.d-flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+.upper-content {
+    background-color: var(--color-dark);
+    flex: 1 1 auto;
+    min-height: 0; /*oppure overflow-y: auto;
+    /*width: 100%
+    height: calc(100vh - 100px);*/
+}
+
+/*
+.wrapper {
+    display: flex;
+    flex-direction: column
+}*/ /*altra soluzione*/
+
+
+
+footer {
+    background-color: var(--color-darkgrey);
+    flex: 0 0 100px;
+    /*height: 100px;*/
+}
+
+#sidebar {
+    /*width: 230px;*/
+    flex: 0 0 230px;
+    background-color: black2;
+}
+
+main {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    /*oppure height: 100%;*/
+    padding: 100px 20px 20px;
+}
+
+.header {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 230px;
+    width: calc(100% - 230px); /*con le media query modifico questo*/
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.502);
+    text-align: right;
+}
+
+div.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+}
+.box img {
+    width: 100%;
+}
+/*per immagini rotonde*/ /*object-fit per modificare l'immagine dentro un box*/
