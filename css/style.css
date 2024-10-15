@@ -29,21 +29,23 @@
   font-style: normal;
 }
 
-body {
-    background-color: var(--color-dark);
-    color: white;
-}
-
 img {
     width: 100%;
 }
 
-.img {
-    width: 230px;
+ul {
+    list-style: none;
 }
-.wrapper {
-    background-color: var(--color-dark);
-    height: 100vh;
+
+h3 {
+    font-size: 1em;
+    display: inline-block;
+}
+
+hr {
+    width: 80%;
+    color: var(--color-lightgrey);
+    margin: 10px auto;
 }
 
 /*Flex Utility*/
@@ -60,40 +62,49 @@ img {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+/*Class*/
+
+.wrapper {
+    background-color: var(--color-dark);
+    height: 100vh;
+}
+
+.logo {
+    width: 130px;
+}
+
+.icon {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#profile {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 50%;
+    background-color: var(--color-lightgrey);
+    display: inline-block;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
 
 .upper-content {
     background-color: var(--color-dark);
     flex: 1 1 auto;
-    min-height: 0; /*oppure overflow-y: auto;
-    /*width: 100%
-    height: calc(100vh - 100px);*/
-}
-
-/*
-.wrapper {
-    display: flex;
-    flex-direction: column
-}*/ /*altra soluzione*/
-
-
-
-footer {
-    background-color: var(--color-darkgrey);
-    flex: 0 0 100px;
-    /*height: 100px;*/
+    min-height: 0;
 }
 
 #sidebar {
-    /*width: 230px;*/
     flex: 0 0 230px;
-    background-color: black2;
-}
-
-main {
-    flex: 1 1 auto;
-    overflow-y: auto;
-    /*oppure height: 100%;*/
-    padding: 100px 20px 20px;
+    background-color: var(--color-black);
 }
 
 .header {
@@ -114,7 +125,70 @@ div.box {
     background-color: red;
     overflow: hidden;
 }
+
 .box img {
     width: 100%;
 }
-/*per immagini rotonde*/ /*object-fit per modificare l'immagine dentro un box*/
+
+.playlist {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--color-lightgrey);
+    color: var(--color-black);
+    font-size: large;
+    font-weight: 1000;
+    display: inline-block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/*Spacer*/
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-bottom {
+    padding-bottom: 10px;
+}
+
+.p-right {
+    padding-right: 5px;
+}
+
+.p-left {
+    padding-left: 10px;
+}
+
+.p-top {
+    padding-top: 10px;
+}
+
+/*Text*/
+
+.small {
+    font-size: small;
+    color: var(--color-lightgrey);
+}
+
+/*Page*/
+
+body {
+    background-color: var(--color-dark);
+    color: white;
+}
+
+main {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 100px 20px 20px;
+}
+
+footer {
+    background-color: var(--color-darkgrey);
+    flex: 0 0 100px;
+}

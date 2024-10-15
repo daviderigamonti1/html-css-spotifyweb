@@ -12,33 +12,52 @@
 <body>
     <div class="wrapper d-flex column">
         <div class="upper-content d-flex debug">
-            <div id="sidebar" class="d-flex column space-between debug">
+            <div id="sidebar" class="small d-flex column space-between debug">
                 <div>
-                    <div class="img">
+                    <div class="logo p-10">
                         <img src="img/logo.svg" alt="logo">
                     </div>
-                    <ul>
-                        <li>Home</li>
-                        <li>Cerca</li>
-                        <li>La tua libreria</li>
+                    <ul class="p-10">
+                        <li>
+                            <div>
+                                <div class="icon"><img src="img/home.svg" alt="home"></div>
+                                <span>Home</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="icon"><img src="img/search.svg" alt="search"></div>
+                                <span>Cerca</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="icon"><img src="img/libreria.svg" alt="library"></div>
+                                <span class="height">La tua libreria</span>
+                            </div>
+                        </li>
                     </ul>
-                    <h3>playlist</h3>
-                    <div>
-                        <div></div>
-                        <div>Crea Playlist</div>
+                    <h3 class="uppercase p-left p-top">playlist</h3>
+                    <div class="p-10">
+                        <div class="playlist">+</div>
+                        <div class="inline-block">Crea Playlist</div>
                     </div>
-                    <ul>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+                    <ul class="p-10">
+                        <li class="p-bottom">Nome Playlist</li>
+                        <li class="p-bottom">Nome Playlist</li>
+                        <li class="p-bottom">Nome Playlist</li>
+                        <li class="p-bottom">Nome Playlist</li>
+                        <li class="p-bottom">Nome Playlist</li>
+                        <li class="p-bottom">Nome Playlist</li>
+                        <li class="p-bottom">Nome Playlist</li>
                     </ul>
                 </div>
-                <div>
-                    installa app
+                <div class="p-10">
+                    <div class="icon p-right"><img src="img/download.svg" alt="download"></div>
+                    <span>Installa app</span>
+                    <hr>
+                    <div id="profile" class="p-right"><img src="img/profile.svg" alt="profile"></div>
+                    <h3>John Doe</h3>
                 </div>
             </div>
             <main class="debug">
@@ -46,7 +65,16 @@
                     effettua l'upgrade
                 </div>
                 <div class="main-content">
-                    <nav>ul con menu navigazione</nav>
+                    <nav>
+                        <ul class="d-flex justify-center">
+                            <li>in evidenza</li>
+                            <li>podcast</li>
+                            <li>classifiche</li>
+                            <li>generi e mood</li>
+                            <li>nuove uscite</li>
+                            <li>scopri</li>
+                        </ul>
+                    </nav>
                     <div>
                         <section><img src="" alt=""></section>
                         <section>
