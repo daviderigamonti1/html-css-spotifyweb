@@ -37,6 +37,14 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: 1em;
+}
+
 h3 {
     font-size: 1em;
     display: inline-block;
@@ -46,6 +54,10 @@ hr {
     width: 80%;
     color: var(--color-lightgrey);
     margin: 10px auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*Flex Utility*/
@@ -72,6 +84,10 @@ hr {
 
 .align-center {
     align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 /*Class*/
@@ -129,8 +145,13 @@ hr {
 div.box {
     width: 200px;
     height: 200px;
+    overflow: hidden;
+}
+
+div.box1 {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background-color: red;
     overflow: hidden;
 }
 
@@ -190,6 +211,10 @@ div.box {
 
 .p-top {
     padding-top: 10px;
+}
+
+.m-right {
+    margin-right: 10px;
 }
 
 /*Text*/
