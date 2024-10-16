@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -13,48 +14,48 @@
     <div class="wrapper d-flex column">
         <div class="upper-content d-flex debug">
             <div id="sidebar" class="small d-flex column space-between debug">
-                <div>
+                <div class="sidebar-top">
                     <div class="logo p-10">
                         <img src="img/logo.svg" alt="logo">
                     </div>
-                    <ul class="p-10">
+                    <ul class="main-nav p-10">
                         <li>
-                            <div>
+                            <a href="#">
                                 <div class="icon"><img src="img/home.svg" alt="home"></div>
                                 <span>Home</span>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div>
+                            <a href="#">
                                 <div class="icon"><img src="img/search.svg" alt="search"></div>
                                 <span>Cerca</span>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div>
+                            <a href="#">
                                 <div class="icon"><img src="img/libreria.svg" alt="library"></div>
-                                <span class="height">La tua libreria</span>
-                            </div>
+                                <span>La tua libreria</span>
+                            </a>
                         </li>
                     </ul>
                     <h3 class="uppercase p-left p-top">playlist</h3>
                     <div class="p-10">
                         <div class="playlist">+</div>
-                        <div class="inline-block">Crea Playlist</div>
+                        <a href="#" class="inline-block">Crea Playlist</a>
                     </div>
                     <ul class="p-10">
-                        <li class="p-bottom">Nome Playlist</li>
-                        <li class="p-bottom">Nome Playlist</li>
-                        <li class="p-bottom">Nome Playlist</li>
-                        <li class="p-bottom">Nome Playlist</li>
-                        <li class="p-bottom">Nome Playlist</li>
-                        <li class="p-bottom">Nome Playlist</li>
-                        <li class="p-bottom">Nome Playlist</li>
+                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
+                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
+                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
+                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
+                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
+                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
+                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
                     </ul>
                 </div>
-                <div class="p-10">
+                <div class="sidebar-bottom p-10">
                     <div class="icon p-right"><img src="img/download.svg" alt="download"></div>
-                    <span>Installa app</span>
+                    <a href="#" class="small">Installa app</a>
                     <hr>
                     <div id="profile" class="p-right"><img src="img/profile.svg" alt="profile"></div>
                     <h3>John Doe</h3>
@@ -62,49 +63,49 @@
             </div>
             <main class="debug">
                 <div class="header d-flex align-center justify-end">
-                    <span id="upgrade" class="uppercase">effettua l'upgrade</span>
+                    <a href="#" id="upgrade" class="uppercase">effettua l'upgrade</a>
                 </div>
                 <div class="main-content">
                     <nav class="container p-bottom">
-                        <ul class="uppercase d-flex space-between">
-                            <li><a href="#" class="small">in evidenza</a></li>
-                            <li><a href="#" class="small">podcast</a></li>
-                            <li><a href="#" class="small">classifiche</a></li>
-                            <li><a href="#" class="small">generi e mood</a></li>
-                            <li><a href="#" class="small">nuove uscite</a></li>
-                            <li><a href="#" class="small">scopri</a></li>
+                        <ul class="small uppercase d-flex space-between">
+                            <li><a href="#">in evidenza</a></li>
+                            <li><a href="#">podcast</a></li>
+                            <li><a href="#">classifiche</a></li>
+                            <li><a href="#">generi e mood</a></li>
+                            <li><a href="#">nuove uscite</a></li>
+                            <li><a href="#">scopri</a></li>
                         </ul>
                     </nav>
                     <div>
                         <section class="p-bottom p-top">
                             <h1 class="p-bottom">Recently played</h1>
-                            <ul class="p-top d-flex">
-                                <li class="m-right d-flex column align-center">
+                            <ul class="p-top d-flex wrap">
+                                <li class="card d-flex column align-center">
                                     <div class="box"><img src="img/metal_lifting.jpg" alt="heavy-metal"></div>
                                     <h2 class="p-top">Heavy Metal</h2>
                                     <span class="small p-top">Subtitle</span>
                                 </li>
-                                <li class="m-right d-flex column align-center">
+                                <li class="card d-flex column align-center">
                                     <div class="box"><img src="img/stranger.jpeg" alt="stranger-things"></div>
                                     <h2 class="p-top">Stranger Things, Vol.1 <br> (a Netflix Original <br> Series Soundtrack)</h2>
                                     <span class="small p-top">Kyle Dixon & Michael Stein</span>
                                 </li>
-                                <li class="m-right d-flex column align-center">
+                                <li class="card d-flex column align-center">
                                     <div class="box"><img src="img/aquietplace.jpeg" alt="quiet-place"></div>
                                     <h2 class="p-top">A quiet place</h2>
                                     <span class="small p-top">Subtitle</span>
                                 </li>
-                                <li class="m-right d-flex column align-center">
+                                <li class="card d-flex column align-center">
                                     <div class="box"><img src="img/split.jpeg" alt="split"></div>
                                     <h2 class="p-top">Split</h2>
                                     <span class="small p-top">Subtitle</span>
                                 </li>
-                                <li class="m-right d-flex column align-center">
+                                <li class="card d-flex column align-center">
                                     <div class="box"><img src="img/cure.jpeg" alt="cure"></div>
                                     <h2 class="p-top">A cure for wellness</h2>
                                     <span class="small p-top">Subtitle</span>
                                 </li>
-                                <li class="d-flex column align-center">
+                                <li class="card d-flex column align-center">
                                     <div class="box"><img src="img/sinister.jpeg" alt="sinister"></div>
                                     <h2 class="p-top">Sinister</h2>
                                     <span class="small p-top">Subtitle</span>
@@ -115,11 +116,11 @@
                             <h1>Creato per John Doe</h1>
                             <span class="small p-top p-bottom">Più ascolti, più accurati saranno i suggerimenti.</span>
                             <ul class="p-top d-flex">
-                                <li class="m-right d-flex column align-center">
+                                <li class="card d-flex column align-center">
                                     <div class="box"><img src="img/radar.jpeg" alt="radar"></div>
                                     <h3 class="p-top">Release Radar</h3>
                                 </li>
-                                <li class="d-flex column align-center">
+                                <li class="card d-flex column align-center">
                                     <div class="box"><img src="img/mixdaily.jpeg" alt="daily-mix"></div>
                                     <h3 class="p-top">Daily Mix 1</h3>
                                 </li>
@@ -129,11 +130,11 @@
                             <h1>Artisti più popolari</h1>
                             <span class="p-top p-bottom small">Più ascolti, più accurati saranno i suggerimenti.</span>
                             <ul class="p-top d-flex">
-                                <li class="m-right d-flex column align-center">
+                                <li class="card d-flex column align-center">
                                     <div class="box1"><img src="img/youg.jpeg" alt="young-beautiful"></div>
                                     <h3>Lana del Rey</h3>
                                 </li>
-                                <li class="d-flex column align-center">
+                                <li class="card d-flex column align-center">
                                     <div class="box1"><img src="img/einaudi.jpeg" alt="ludovico-einaudi"></div>
                                     <h3>Ludovico Einaudi</h3>
                                 </li>
@@ -143,7 +144,37 @@
                 </div>
             </main>
         </div>
-        <footer class="debug"></footer>
+        <footer class="d-flex">
+            <div class="footer-left">
+                <div id="sinister"><img src="img/sinister.jpeg" alt=""></div>
+                <div class="p-10 d-flex column">
+                    <h5>Sinister</h5>
+                    <span class="x-small">Brano Nome</span>
+                </div>
+                <span class="p-10 lightgrey"><i class="fa-regular fa-heart"></i></span>
+                <span class="lightgrey"><i class="fa-regular fa-folder"></i></span>
+            </div>
+            <div class="footer-center">
+                <div class="d-flex align-center">
+                    <span><i class="fa-solid fa-shuffle"></i></span>
+                    <span><i class="fa-solid fa-backward-step"></i></span>
+                    <span class="large"><i class="fa-regular fa-circle-play"></i></span>
+                    <span><i class="fa-solid fa-forward-step"></i></span>
+                    <span><i class="fa-solid fa-arrow-rotate-right"></i></span>
+                </div>
+                <div class="small d-flex align-center">
+                    <span>0:25</span>
+                    <input type="range" id="range">
+                    <span>4:35</span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span><i class="fa-solid fa-list"></i></span>
+                <span class="p-10"><i class="fa-solid fa-tv"></i></span>
+                <span><i class="fa-solid fa-volume-high"></i></span>
+                <input type="range" class="range m-10">
+            </div>
+        </footer>
     </div>
 </body>
 </html>
