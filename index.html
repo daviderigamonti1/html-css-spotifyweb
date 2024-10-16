@@ -12,9 +12,9 @@
 </head>
 <body>
     <div class="wrapper d-flex column">
-        <div class="upper-content d-flex debug">
-            <div id="sidebar" class="small d-flex column space-between debug">
-                <div class="sidebar-top">
+        <div class="upper-content d-flex">
+            <div id="sidebar" class="small d-flex column space-between">
+                <div class="sidebar-top d-flex column">
                     <div class="logo p-10">
                         <img src="img/logo.svg" alt="logo">
                     </div>
@@ -38,19 +38,21 @@
                             </a>
                         </li>
                     </ul>
-                    <h3 class="uppercase p-left p-top">playlist</h3>
-                    <div class="p-10">
+                    <div>
+                        <h3 class="uppercase p-left p-top">playlist</h3>
+                        <div class="p-10">
                         <div class="playlist">+</div>
                         <a href="#" class="inline-block">Crea Playlist</a>
+                        </div>
                     </div>
-                    <ul class="p-10">
-                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
-                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
-                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
-                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
-                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
-                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
-                        <li><a href="#" class="p-bottom">Nome Playlist</a></li>
+                    <ul id="playlist" class="p-10 d-flex column">
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
                 <div class="sidebar-bottom p-10">
@@ -61,7 +63,7 @@
                     <h3>John Doe</h3>
                 </div>
             </div>
-            <main class="debug">
+            <main>
                 <div class="header d-flex align-center justify-end">
                     <a href="#" id="upgrade" class="uppercase">effettua l'upgrade</a>
                 </div>
