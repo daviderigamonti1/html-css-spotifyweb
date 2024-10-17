@@ -109,6 +109,10 @@ a {
     width: 130px;
 }
 
+.logo1 {
+    display: none;
+}
+
 .icon {
     width: 20px;
     display: inline-block;
@@ -131,7 +135,7 @@ a {
 #sidebar {
     flex: 0 0 230px;
     background-color: var(--color-black);
-    min-height: 400px;
+    min-height: 260px;
 }
 
 .sidebar-top {
@@ -139,7 +143,8 @@ a {
 }
 
 .sidebar-bottom {
-    height: 90px;
+    height: 60px;
+    padding: 0 10px;
 }
 
 .sidebar-top #playlist li {
@@ -218,15 +223,35 @@ div.box1 {
     accent-color: var(--color-lightgrey);
 }
 
-#range {
-    accent-color: var(--color-lightgrey);
-    padding: 0 150px;
+.controller-bar {
+    flex-grow: 1;
+}
+
+.footer-center .playbar-time input {
+    width: 100%;
+}
+
+.playbar-icons {
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.playbar-time {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 /*Spacer*/
 
 .p-10 {
     padding: 10px;
+}
+
+.g-10{
+    gap: 20px;
 }
 
 .p-bottom {
@@ -246,7 +271,19 @@ div.box1 {
 }
 
 .m-10 {
-    margin-left: 10px;
+    margin-left: 0 10px;
+}
+
+.sidebar-top .main-nav a {
+    padding: 10px;
+}
+
+.sidebar-top #playlist li {
+    padding: 7px 10px;
+}
+
+.footer-left a {
+    padding-left: 10px;
 }
 
 /*Text*/
@@ -309,11 +346,23 @@ main {
 main .main-content nav a::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 30px;
     margin: 0 auto;
     height: 3px;
 }
 
+.active::after {
+    content: '';
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    height: 3px;
+    background-color: var(--color-highlight);
+}
+
+main nav a {
+    font-weight: 600;
+}
 /*footer*/
 
 footer {
@@ -345,7 +394,7 @@ footer .footer-center span {
 }
 
 .footer-center {
-    width: calc(100% - 600px);
+    width: 40%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -369,7 +418,7 @@ nav a:hover {
 }
 
 main .main-content nav a:hover::after {
-    background-color: var(--color-highlights);
+    background-color: var(--color-highlight);
 }
 
 #upgrade:hover {
@@ -381,6 +430,12 @@ main .main-content nav a:hover::after {
 @media screen and (max-width: 1200px) {
     .card {
         width: calc(100% / 4);
+    }
+    main nav .space-between {
+        justify-content: center;
+    }
+    main nav a{
+        padding: 10px;
     }
 }
 
@@ -400,8 +455,32 @@ main .main-content nav a:hover::after {
     .card {
         width: calc(100% / 1);
     }
-}
-
-@media screen and (max-width: ) {
-    
+    #sidebar {
+        flex: 0 0 30px;
+    }
+    .sidebar-content {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .logo1 {
+        display: block;
+        width: 25px;
+    }
+    .sidebar-top {
+        align-items: center;
+    }
+    section {
+        text-align: center;
+    }
+    .sidebar-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .header {
+        width: calc(100% - 30px);
+        left: 30px;
+    }
 }

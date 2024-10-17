@@ -18,34 +18,37 @@
                     <div class="logo p-10">
                         <img src="img/logo.svg" alt="logo">
                     </div>
-                    <ul class="main-nav p-10">
+                    <div class="logo1 p-top">
+                        <img src="img/logo-small.svg" alt="logo-small">
+                    </div>
+                    <ul class="main-nav">
                         <li>
                             <a href="#">
                                 <div class="icon"><img src="img/home.svg" alt="home"></div>
-                                <span>Home</span>
+                                <span class="sidebar-content">Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="icon"><img src="img/search.svg" alt="search"></div>
-                                <span>Cerca</span>
+                                <span class="sidebar-content">Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="icon"><img src="img/libreria.svg" alt="library"></div>
-                                <span>La tua libreria</span>
+                                <span class="sidebar-content">La tua libreria</span>
                             </a>
                         </li>
                     </ul>
-                    <div>
+                    <div class="sidebar-content">
                         <h3 class="uppercase p-left p-top">playlist</h3>
                         <div class="p-10">
-                        <div class="playlist">+</div>
-                        <a href="#" class="inline-block">Crea Playlist</a>
+                            <div class="playlist">+</div>
+                            <a href="#" class="inline-block">Crea Playlist</a>
                         </div>
                     </div>
-                    <ul id="playlist" class="p-10 d-flex column">
+                    <ul id="playlist" class="sidebar-content d-flex column">
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
@@ -55,12 +58,12 @@
                         <li><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
-                <div class="sidebar-bottom p-10">
+                <div class="sidebar-bottom">
                     <div class="icon p-right"><img src="img/download.svg" alt="download"></div>
-                    <a href="#" class="small">Installa app</a>
-                    <hr>
+                    <a href="#" class="small sidebar-content">Installa app</a>
+                    <hr class="sidebar-content">
                     <div id="profile" class="p-right"><img src="img/profile.svg" alt="profile"></div>
-                    <h3>John Doe</h3>
+                    <h3 class="sidebar-content">John Doe</h3>
                 </div>
             </div>
             <main>
@@ -69,8 +72,8 @@
                 </div>
                 <div class="main-content">
                     <nav class="container p-bottom">
-                        <ul class="small uppercase d-flex space-between">
-                            <li><a href="#">in evidenza</a></li>
+                        <ul class="small uppercase d-flex space-between wrap">
+                            <li class="active"><a href="#">in evidenza</a></li>
                             <li><a href="#">podcast</a></li>
                             <li><a href="#">classifiche</a></li>
                             <li><a href="#">generi e mood</a></li>
@@ -146,35 +149,37 @@
                 </div>
             </main>
         </div>
-        <footer class="d-flex">
+        <footer class="d-flex space-between">
             <div class="footer-left">
-                <div id="sinister"><img src="img/sinister.jpeg" alt=""></div>
-                <div class="p-10 d-flex column">
+                <div id="sinister"><img src="img/sinister.jpeg" alt="sinister"></div>
+                <div class="p-10">
                     <h5>Sinister</h5>
                     <span class="x-small">Brano Nome</span>
                 </div>
-                <span class="p-10 lightgrey"><i class="fa-regular fa-heart"></i></span>
-                <span class="lightgrey"><i class="fa-regular fa-folder"></i></span>
+                <div class="lightgrey">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-folder"></i></a>
+                </div>
             </div>
             <div class="footer-center">
-                <div class="d-flex align-center">
+                <div class="playbar-icons">
                     <span><i class="fa-solid fa-shuffle"></i></span>
                     <span><i class="fa-solid fa-backward-step"></i></span>
                     <span class="large"><i class="fa-regular fa-circle-play"></i></span>
                     <span><i class="fa-solid fa-forward-step"></i></span>
                     <span><i class="fa-solid fa-arrow-rotate-right"></i></span>
                 </div>
-                <div class="small d-flex align-center">
-                    <span>0:25</span>
-                    <input type="range" id="range">
-                    <span>4:35</span>
+                <div class="playbar-time small">
+                    <div class="p-10">0:25</div>
+                    <div class="controller-bar"><input type="range" class="range"></div>
+                    <div class="p-10">4:35</div>
                 </div>
             </div>
             <div class="footer-right">
-                <span><i class="fa-solid fa-list"></i></span>
-                <span class="p-10"><i class="fa-solid fa-tv"></i></span>
-                <span><i class="fa-solid fa-volume-high"></i></span>
-                <input type="range" class="range m-10">
+                <div><i class="fa-solid fa-list"></i></div>
+                <div class="p-10"><i class="fa-solid fa-tv"></i></div>
+                <div><i class="fa-solid fa-volume-high"></i></div>
+                <div class="range p-10"><input type="range"></div>
             </div>
         </footer>
     </div>
