@@ -139,7 +139,7 @@ a {
 }
 
 .sidebar-top {
-    height: calc(100%-90px);
+    height: calc(100% - 90px);
 }
 
 .sidebar-bottom {
@@ -156,7 +156,7 @@ a {
     position: fixed;
     top: 0;
     left: 230px;
-    width: calc(100% - 230px); /*con le media query modifico questo*/
+    width: calc(100% - 230px);
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.502);
     text-align: right;
@@ -167,10 +167,38 @@ a {
     padding: 5px;
 }
 
-div.box {
-    overflow: hidden;
-    cursor: pointer;
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.box {
+    overflow: hidden;
+    width: 100%;
+    /*position: relative;*/
+}
+
+.layover {
+    display: none;
+}
+
+/*.layover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: var(--color-light);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 10;
+}*/
 
 div.box1 {
     border-radius: 50%;
@@ -242,6 +270,10 @@ div.box1 {
     width: 100%;
     display: flex;
     align-items: center;
+}
+
+.playbar-icons span {
+    transition: transform 0.2s;
 }
 
 /*Spacer*/
@@ -417,6 +449,11 @@ nav a:hover {
     border-left: 3px solid var(--color-highlight);
 }
 
+.sidebar-content .create a:hover {
+    color: var(--color-light);
+    cursor: pointer;
+}
+
 main .main-content nav a:hover::after {
     background-color: var(--color-highlight);
 }
@@ -424,6 +461,40 @@ main .main-content nav a:hover::after {
 #upgrade:hover {
     transform: scale(1.2);
 }
+
+.footer-left span:hover {
+    color: var(--color-light);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-left a:hover {
+    color: var(--color-light);
+}
+
+.playbar-icons span:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.playbar-time input:hover,
+.footer-right input:hover {
+    cursor: pointer;
+    accent-color: var(--color-highlight);
+}
+
+.footer-right i:hover {
+    cursor: pointer;
+}
+
+.box:hover,
+.box1:hover {
+    cursor: pointer;
+}
+
+/*.card-image:hover .layover {
+    opacity: 1;
+}*/
 
 /*Media Query*/
 
